@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import HomeIcon from "@material-ui/icons/Home";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import NotificationsIcon from "@material-ui/icons/Notifications";
+import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import HeaderOption from "./HeaderOption";
 import { logout } from "./features/userSlice";
 import { auth } from "./firebase";
@@ -24,8 +24,8 @@ const Header = () => {
 
       <div className="header__right">
         <HeaderOption Icon={HomeIcon} title="Home" />
-        <HeaderOption Icon={NotificationsIcon} title="Notifications" />
-        <HeaderOption title="Logout" Icon={ExitToAppIcon} onClick={logoutHandler} />
+        <HeaderOption Icon={LocalCafeIcon} title="Buy us a coffee" />
+        <HeaderOption title="Logout"Icon={ExitToAppIcon} onClick={logoutHandler} />
       </div>
     </div>
   );

@@ -92,15 +92,14 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button type="submit" onClick={loginHandler}>
+        <button className="loginbutton" type="submit" onClick={loginHandler}>
           Sign In
         </button>
       </form>
 
       <p>
-        Not a member?{" "}
         <span className="login__register" onClick={registerHandler}>
-          Register Now
+          Click this to Sign Up
         </span>
       </p>
     </div>
