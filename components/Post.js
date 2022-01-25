@@ -8,12 +8,9 @@ import {
   setDoc,
 } from "@firebase/firestore";
 import {
-  ChartBarIcon,
-  ChatIcon,
-  DotsHorizontalIcon,
+  AnnotationIcon,
+  ArrowsExpandIcon,
   HeartIcon,
-  ShareIcon,
-  SwitchHorizontalIcon,
   TrashIcon,
 } from "@heroicons/react/outline";
 import {
@@ -77,7 +74,7 @@ function Post({ id, post, postPage }) {
 
   return (
     <div
-      className="p-3 flex cursor-pointer border-b-4 marker:mt-2 border-[#252525]"
+      className="p-3 flex cursor-pointer break-all border-b-4 marker:mt-2 border-[#252525]"
       onClick={() => router.push(`/${id}`)}
     >
       {!postPage && (
@@ -93,7 +90,7 @@ function Post({ id, post, postPage }) {
             <img
               src={post?.userImg}
               alt="Profile Pic"
-              className="h-11 w-11 rounded-full mr-4"
+              className="h-11 w-11 hover:ease-out rounded-full mr-4"
             />
           )}
           <div className="text-[#6e767d]">
@@ -143,11 +140,12 @@ function Post({ id, post, postPage }) {
               setIsOpen(true);
             }}
           >
-            <div className="icon group-hover:bg-[#1d9bf0] group-hover:bg-opacity-10">
-              <ChatIcon className="h-5 group-hover:text-[#1d9bf0]" />
+            <h1 className="invisible">.............</h1>
+            <div className="icon">
+              <AnnotationIcon className="h-5 transition hover:text-[#1d9bf0]" />
             </div>
             {comments.length > 0 && (
-              <span className="group-hover:text-[#1d9bf0] text-sm">
+              <span className="text-sm">
                 {comments.length}
               </span>
             )}
@@ -155,21 +153,21 @@ function Post({ id, post, postPage }) {
 
           {session.user.uid === post?.id ? (
             <div
-              className="flex items-center space-x-1 group"
+              className=" flex items-center space-x-1 group"
               onClick={(e) => {
                 e.stopPropagation();
                 deleteDoc(doc(db, "posts", id));
                 router.push("/");
               }}
             >
-              <div className="icon group-hover:bg-red-600/10">
-                <TrashIcon className="h-5 group-hover:text-red-600" />
+              <div className="icon">
+                <TrashIcon className="h-5 group-hover:text-red-600 transition" />
               </div>
             </div>
           ) : (
             <div className="flex items-center space-x-1 group">
-              <div className="icon group-hover:bg-green-500/10">
-                <SwitchHorizontalIcon className="h-5 group-hover:text-green-500" />
+              <div className="icon">
+                <ArrowsExpandIcon className="h-5 transition group-hover:text-green-500" />
               </div>
             </div>
           )}
@@ -181,29 +179,22 @@ function Post({ id, post, postPage }) {
               likePost();
             }}
           >
-            <div className="icon group-hover:bg-pink-600/10">
+            <div className="icon">
               {liked ? (
-                <HeartIconFilled className="h-5 text-pink-600" />
+                <HeartIconFilled className="h-5 hover:text-pink-400 transition text-pink-600" />
               ) : (
                 <HeartIcon className="h-5 group-hover:text-pink-600" />
               )}
             </div>
             {likes.length > 0 && (
               <span
-                className={`group-hover:text-pink-600 text-sm ${
+                className={`group-hover:text-pink-600 text-sm${
                   liked && "text-pink-600"
                 }`}
               >
                 {likes.length}
               </span>
             )}
-          </div>
-
-          <div className="icon group">
-            <ShareIcon className="h-5 group-hover:text-[#1d9bf0]" />
-          </div>
-          <div className="icon group">
-            <ChartBarIcon className="h-5 group-hover:text-[#1d9bf0]" />
           </div>
         </div>
       </div>

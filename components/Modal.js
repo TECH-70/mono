@@ -13,11 +13,7 @@ import { db } from "../firebase";
 import { useSession } from "next-auth/react";
 import {
   ArrowNarrowLeftIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  EmojiHappyIcon,
   PhotographIcon,
-  XIcon,
 } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import Moment from "react-moment";
@@ -121,20 +117,8 @@ function Modal() {
 
                       <div className="flex items-center justify-between pt-2.5">
                         <div className="flex items-center">
-                          <div className="icon">
+                          <div className="icon invisible">
                             <PhotographIcon className="text-[#c4c4c4] h-[22px]" />
-                          </div>
-
-                          <div className="icon rotate-90">
-                            <ChartBarIcon className="text-[#c4c4c4] h-[22px]" />
-                          </div>
-
-                          <div className="icon">
-                            <EmojiHappyIcon className="text-[#c4c4c4] h-[22px]" />
-                          </div>
-
-                          <div className="icon">
-                            <CalendarIcon className="text-[#c4c4c4] h-[22px]" />
                           </div>
                         </div>
                         <button

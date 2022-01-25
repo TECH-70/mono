@@ -1,8 +1,4 @@
 import {
-  CalendarIcon,
-  ChartBarIcon,
-  EmojiHappyIcon,
-  PencilAltIcon,
   PhotographIcon,
   XIcon,
 } from "@heroicons/react/outline";
@@ -17,10 +13,6 @@ import {
 } from "@firebase/firestore";
 import { getDownloadURL, ref, uploadString } from "@firebase/storage";
 import { signOut, useSession } from "next-auth/react";
-import dynamic from "next/dynamic";
-// const Picker = dynamic(() => import("emoji-picker-react"), { ssr: false });
-import { Picker } from "emoji-mart";
-import "emoji-mart/css/emoji-mart.css";
 
 function Input() {
   const { data: session } = useSession();
@@ -91,7 +83,7 @@ function Input() {
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Wanna say something?"
+            placeholder="How's life sailing? 🌊 "
             rows="2"
             className="bg-[#252525] border-b-4 outline-none text-[#d9d9d9] rounded-sm pb-0 pl-2 text-lg h-10 placeholder-gray-500 tracking-wide w-full overflow-hidden"
           />
