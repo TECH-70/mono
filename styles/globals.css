@@ -6,6 +6,10 @@
 @layer base {
   ::-webkit-scrollbar {
     width: 1px;
+    @font-face {
+      font-family: 'Rubik';
+      src: url('/fonts/Rubik-Regular.woff2');
+    }
   }
   body {
     font-family: 'Rubik';

@@ -26,10 +26,7 @@ export default function Home({ trendingResults, followResults, providers }) {
       <main className="bg-[#1a1a1a] min-h-screen flex max-w-[1500px] mx-auto">
         <Sidebar />
         <Feed />
-        <Widgets
-          trendingResults={trendingResults}
-          followResults={followResults}
-        />
+        <Widgets/>
 
         {isOpen && <Modal />}
       </main>
