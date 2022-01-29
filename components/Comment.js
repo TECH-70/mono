@@ -2,7 +2,7 @@ import Moment from "react-moment";
 
 function Comment({ comment }) {
   return (
-    <div className="p-3 flex cursor-pointer border-b-4 border-[#252525]">
+    <div className="p-6 flex cursor-pointer border-b-2 border-[#252525]">
       <img
         src={comment?.userImg}
         alt=""
