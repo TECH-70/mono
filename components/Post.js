@@ -11,6 +11,7 @@ import {
   AnnotationIcon,
   ArrowsExpandIcon,
   HeartIcon,
+  ShieldExclamationIcon,
   TrashIcon,
 } from "@heroicons/react/outline";
 import {
@@ -140,7 +141,7 @@ function Post({ id, post, postPage }) {
               setIsOpen(true);
             }}
           >
-            <h1 className="invisible">.............</h1>
+            <h1 className="invisible">............</h1>
             <div className="icon">
               <AnnotationIcon className="h-5 transition hover:text-[#1d9bf0]" />
             </div>
@@ -150,6 +151,9 @@ function Post({ id, post, postPage }) {
               </span>
             )}
           </div>
+          <a href="mailto:devaccshaurya@gmail.com?subject=&body=#Hi, please post the name and profile picture of the person you would like to report, with a suitable reason. We will get back to you.">
+            <ShieldExclamationIcon className="cursor-pointer hover:text-[#cc8143] mb-3 transition mt-3 h-6 text-[#fff] mr-3" />
+          </a>
 
           {session.user.uid === post?.id ? (
             <div

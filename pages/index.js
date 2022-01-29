@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { ScrollToTop } from "../components";
 import Feed from "../components/Feed";
 import Sidebar from "../components/Sidebar";
 import Widgets from "../components/Widgets";
@@ -15,6 +16,7 @@ export default function Home({ trendingResults, followResults, providers }) {
   if (!session) return <Login providers={providers} />;
 
   return (
+    <>
     <div className="">
       <Head>
         <title>Monotone</title>
@@ -32,6 +34,8 @@ export default function Home({ trendingResults, followResults, providers }) {
         {isOpen && <Modal />}
       </main>
     </div>
+    <ScrollToTop />
+    </>
   );
 }
 

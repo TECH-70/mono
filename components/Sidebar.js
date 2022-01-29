@@ -1,4 +1,4 @@
-import { ClockIcon, DotsHorizontalIcon } from "@heroicons/react/outline";
+import { ClockIcon } from "@heroicons/react/outline";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import React from "react";
@@ -32,7 +32,7 @@ function Sidebar() {
           className="rounded-full border"
         />
       </div>
-      <div className="text-[#d9d9d9] flex items-center justify-center mt-5 hoverAnimation xl:ml-auto xl:-mr-5">
+      <div className="text-[#d9d9d9] flex items-center justify-center mt-2 hoverAnimation xl:ml-auto xl:-mr-5">
         <img
           src={session.user.image}
           alt=""
