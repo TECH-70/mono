@@ -31,7 +31,7 @@ function Feed() {
       <div className="text-[#d9d9d9] flex items-center sm:justify-between py-2 px-3 sticky top-0 z-50 bg-[#1a1a1a]">
         <h1 className="sm:visible text-3xl mt-3 mb-3 md:invisible">Monotone</h1>
         <div className=" p-2.5 flex items-center justify-center xl:px-0 ml-auto">
-          <a href="mailto:devaccshaurya@gmail.com?subject=&body=#Hi, please post the bug which you have encountered to the monotone team. We will get back to you shortly.">
+          <a href="mailto:arctycstudios@gmail.com?subject=&body=#Hi, please post the bug which you have encountered to the monotone team. We will get back to you shortly.">
             <ExclamationIcon className="cursor-pointer hover:text-[#cc8143] mb-3 transition mt-3 h-6 text-[#c4c4c4] mr-3" />
           </a>
           <a href="https://monotone-web.netlify.app/">

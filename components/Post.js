@@ -151,7 +151,7 @@ function Post({ id, post, postPage }) {
               </span>
             )}
           </div>
-          <a href="mailto:devaccshaurya@gmail.com?subject=&body=#Hi, please post the name and profile picture of the person you would like to report, with a suitable reason. We will get back to you.">
+          <a href="mailto:arctycstudios@gmail.com?subject=&body=#Hi, please post the name and profile picture of the person you would like to report, with a suitable reason. We will get back to you.">
             <ShieldExclamationIcon className="cursor-pointer hover:text-[#cc8143] mb-3 transition mt-3 h-6 text-[#fff] mr-3" />
           </a>
 
