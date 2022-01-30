@@ -15,7 +15,7 @@ export default function Home({ trendingResults, followResults, providers }) {
 
   if (!session) return <Login providers={providers} />;
 
-  return (
+  return ( 
     <>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"></link>
     <div className="">

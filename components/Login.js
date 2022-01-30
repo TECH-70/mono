@@ -3,8 +3,9 @@ import Image from "next/image";
 
 function Login({ providers }) {
   return (
-    <div className="flex flex-col items-center space-y-20 pt-48">
-      <h1 className="text-white text-5xl mb-10">Monotone</h1>
+    <div className="flex flex-col items-center pt-48">
+      <h1 className="text-white text-5xl mb-3">Monotone</h1>
+      <h1 className="text-white mb-10">Alpha v1.0.0</h1>
       <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"></link>
       <Image
           src="https://i.ibb.co/bWKZV3d/Screenshot-2022-01-24-180805.png"
