@@ -26,24 +26,24 @@ function Widgets() {
          src="https://cdn.discordapp.com/attachments/815945921056997466/936677784816865351/pfpaesthetic.png"
          className="h-9 w-9 rounded-full"
          />
-         <h1 className="mr-[165px]">Shaurya</h1>
+         <h1 className="mr-[170px] p-1 font-semibold">Shaurya</h1>
         </button>
         <button className="hover:bg-white hover:bg-opacity-[0.03] px-4 py-3 cursor-pointer transition duration-200 ease-out flex items-center justify-between w-full text-[#fff] font-light">
          <img
          src="https://i.ibb.co/C58nhTz/1f91b1542f1a2e1c784145396bddc9f4.png"
          className="h-9 w-9 rounded-full"
          />
-         <h1 className="mr-[180px] p-2">Arnav</h1>
+         <h1 className="mr-[180px] p-1 font-semibold">Arnav</h1>
         </button>
         <button className="hover:bg-white hover:bg-opacity-[0.03] px-4 py-3 cursor-pointer transition duration-200 ease-out flex items-center justify-between w-full text-[#fff] font-light">
         <img
          src="https://cdn.discordapp.com/attachments/815945921056997466/936675563983241266/noicepfp.png"
          className="h-9 w-9 rounded-full"
          />
-         <h1 className="mr-[175px] p-2">Piyush</h1>
+         <h1 className="mr-[175px] p-1 font-semibold">Piyush</h1>
         </button>
         <a href="https://monotone-web.netlify.app/"> <button className="hover:bg-white hover:bg-opacity-[0.03] px-4 py-3 cursor-pointer transition duration-200 ease-out flex items-center justify-between w-full text-[#fff] text-[18px] font-bold">
-          Visit the creators 🟢
+        🔴 Visit the creators 🔴
         </button> </a>
       </div>
     </div>
