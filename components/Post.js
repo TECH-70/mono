@@ -75,7 +75,7 @@ function Post({ id, post, postPage }) {
 
   return (
     <div
-      className="p-3 flex cursor-pointer break-all border-b-4 marker:mt-2 border-[#252525]"
+      className="p-3 max-w-[1000px] flex cursor-pointer break-all border-b-4 marker:mt-2 border-[#252525]"
       onClick={() => router.push(`/${id}`)}
     >
       {!postPage && (
