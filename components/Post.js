@@ -160,15 +160,17 @@ function Post({ id, post, postPage }) {
               <PencilAltIcon className="h-5 transition hover:text-[#1d9bf0]" />
             </div>
           </div>
-            <ShieldExclamationIcon className="cursor-pointer hover:text-[#cc8143] mb-3 transition mt-3 h-6 text-[#fff] mr-3" onClick={async (e) => {
-              const history = localStorage.getItem(`reported/${id}`)
-              if (history) {
-                return alert('You have already reported this post')
-              }
-              await reportPost(id)
-              alert('Your report has been sent to the moderators')
-              localStorage.setItem(`reported/${id}`, 'true')
-            }}/>
+          <div className="flex items-center space-x-1 group">
+              <div className="icon">
+                <AnnotationIcon className="h-5 transition group-hover:text-green-500" />
+              </div>
+              {comments.length > 0 && (
+              <span className="text-sm">
+                {comments.length}
+              </span>
+            )} 
+            </div>
+            
 
           {session.user.uid === post?.id ? (
             <div
@@ -184,16 +186,15 @@ function Post({ id, post, postPage }) {
               </div>
             </div>
           ) : (
-            <div className="flex items-center space-x-1 group">
-              <div className="icon">
-                <AnnotationIcon className="h-5 transition group-hover:text-green-500" />
-              </div>
-              {comments.length > 0 && (
-              <span className="text-sm">
-                {comments.length}
-              </span>
-            )} 
-            </div>
+            <ShieldExclamationIcon className="cursor-pointer hover:text-[#cc8143] mb-3 transition mt-3 h-6 text-[#fff] mr-3" onClick={async (e) => {
+              const history = localStorage.getItem(`reported/${id}`)
+              if (history) {
+                return alert('You have already reported this post')
+              }
+              await reportPost(id)
+              alert('Your report has been sent to the moderators')
+              localStorage.setItem(`reported/${id}`, 'true')
+            }}/>
           )}
 
           <div
