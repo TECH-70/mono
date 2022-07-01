@@ -1,18 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@600&family=Poppins:wght@500&display=swap');
+
+
 
 @layer base {
   ::-webkit-scrollbar {
     width: 1px;
-    @font-face {
-      font-family: 'Rubik';
-      src: url('/fonts/Rubik-Regular.woff2');
-    }
   }
   body {
-    font-family: 'Rubik';
+    font-family: 'Poppins', sans-serif;
     @apply bg-[#1A1A1A];
   }
 }

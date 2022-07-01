@@ -98,7 +98,7 @@ function Login({ providers }) {
       <title>Monotone</title>
       <h1 className="text-white text-5xl mb-3">Monotone</h1>
       <h1 className="text-white mb-10">Alpha v1.0.0</h1>
-      <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet"></link>
       <Image
           src="https://i.ibb.co/bWKZV3d/Screenshot-2022-01-24-180805.png"
           width={150}

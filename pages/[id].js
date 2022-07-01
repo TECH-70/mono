@@ -57,7 +57,7 @@ function PostPage({ trendingResults, followResults, providers }) {
           Monotone
         </title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet"></link>
       </Head>
       <main className="bg-[#1a1a1a] min-h-screen flex max-w-[1500px] mx-auto">
         <Sidebar />

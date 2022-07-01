@@ -17,7 +17,7 @@ export default function Home({ trendingResults, followResults, providers }) {
 
   return ( 
     <>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"></link>
+   <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet"></link>
     <div className="">
       <Head>
         <title>Monotone</title>
