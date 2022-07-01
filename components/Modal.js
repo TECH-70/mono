@@ -77,7 +77,7 @@ function Modal() {
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <div className="inline-block align-bottom bg-[#1a1a1a] rounded-sm text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full">
-              <div className="flex items-center px-1.5 py-2 border-b border-gray-700">
+              <div className="flex items-center px-1.5 py-2">
                 <div
                   className="hoverAnimation w-9 h-9 flex items-center justify-center xl:px-0"
                   onClick={() => setIsOpen(false)}
@@ -92,10 +92,13 @@ function Modal() {
                       <div className="inline-block group">
                         <span>Replying to </span>
                         <h4 className="font-bold text-[#d9d9d9] inline-block text-[15px] sm:text-base">
-                          "{post?.username}"
+                          {post?.username}'s Post ✏️
                         </h4>
                       </div>{" "}
-                      :{" "}
+                      : {" "} 
+                      <div className="text-sm">
+                        (comments are permanent)
+                      </div>
                     </div>
                   </div>
 
@@ -109,7 +112,7 @@ function Modal() {
                       <textarea
                         value={comment}
                         onChange={(e) => setComment(e.target.value)}
-                        placeholder="What are your thoughts?"
+                        placeholder="What's your brain saying? 🧠"
                         rows="2"
                         className="bg-transparent outline-none text-[#d9d9d9] text-lg placeholder-gray-500 tracking-wide w-full min-h-[80px]"
                       />

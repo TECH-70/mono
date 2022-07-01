@@ -11,7 +11,7 @@ function Widgets() {
           className="h-9 w-9 mt-3 rounded-full sticky xl:mr-2.5"
         />
         <div className="ml-1 mt-10 h-10 xl:inline leading-3">
-          <h4 className="font-bold mt-2.5">{session.user.name}</h4>
+          <h4 className="font-bold mt-2.5">{session.user.name} ☁️</h4>
         </div>
       </div>
       <hr className="border-[#1a1a1a]"></hr>
