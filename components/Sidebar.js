@@ -26,7 +26,7 @@ function Sidebar() {
     <div className="hidden sm:flex flex-col items-center xl:items-start xl:w-[340px] fixed h-full">
       <div className="flex items-center justify-center w-20 h-20 xl:ml-24">
         <Image
-          src="https://i.ibb.co/bWKZV3d/Screenshot-2022-01-24-180805.png"
+          src="https://i.ibb.co/gwtYFmm/Monotone-LOGO.png"
           width={50}
           height={50}
           className="rounded-full border"

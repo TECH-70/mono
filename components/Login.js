@@ -98,9 +98,9 @@ function Login({ providers }) {
       <title>Monotone</title>
       <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet"></link>
       <Image
-          src="https://i.ibb.co/bWKZV3d/Screenshot-2022-01-24-180805.png"
-          width={150}
-          height={150}
+          src="https://i.ibb.co/gwtYFmm/Monotone-LOGO.png"
+          width={200}
+          height={200}
           className="rounded-full border"
         />
 
