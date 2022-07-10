@@ -1,8 +1,8 @@
+import Moment from "react-moment";
 import {
   ThumbDownIcon,
   ThumbUpIcon
 } from "@heroicons/react/outline";
-import Moment from "react-moment";
 
 function Comment({ comment }) {
   return (

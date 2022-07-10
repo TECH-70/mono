@@ -77,7 +77,7 @@ function Input() {
         loading && "opacity-60"
       }`}
     >
-      <div className="w-full">
+      <div className="flex w-full">
         <div className={`${selectedFile && "pb-7"} ${input && "space-y-2.5"}`}>
         
           <input
@@ -85,7 +85,7 @@ function Input() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="How's life sailing? 🌊 "
             rows="2"
-            className="bg-[#252525] border-b-4 outline-none text-[#d9d9d9] rounded-sm pb-0 pl-2 text-lg h-10 placeholder-gray-500 tracking-wide w-full overflow-hidden"
+            className="bg-[#252525] border-b-4 outline-none text-[#d9d9d9] rounded-sm pb-0 pl-4 text-lg h-10 placeholder-gray-500 tracking-wide w-[550px] ml-[-5px] mr-0 overflow-hidden"
           />
 
           {selectedFile && (
@@ -94,24 +94,25 @@ function Input() {
                 className="absolute w-8 h-8 bg-[#15181c] hover:bg-[#272c26] bg-opacity-75 rounded-full flex items-center justify-center top-1 left-1 cursor-pointer"
                 onClick={() => setSelectedFile(null)}
               >
-                <XIcon className="text-white h-5" />
+                <XIcon className="text-[#fff] font-bold h-5" />
               </div>
               <img
                 src={selectedFile}
                 alt=""
-                className="rounded-2xl max-h-80 object-contain"
+                className="rounded-sm max-h-80 max-w-[545px] object-contain"
               />
             </div>
           )}
         </div>
         {!loading && (
-          <div className="flex items-center justify-between pt-2.5">
+          <div className="flex items-center pt-2.5 ml-auto">
             <div className="flex items-center">
+          <div className="mt-[-10px] mr-1 ml-1">
               <div
                 className="icon"
                 onClick={() => filePickerRef.current.click()}
               >
-                <PhotographIcon className="text-[#ffffff] h-[22px]" />
+                <PhotographIcon className="text-[#ffffff] position-fixed first-letter: h-[22px]" />
                 <input
                   type="file"
                   ref={filePickerRef}
@@ -121,12 +122,13 @@ function Input() {
               </div>
             </div>
             <button
-              className="bg-[#fff] text-black rounded-sm cursor-pointer px-4 py-1.5 shadow-md hover:bg-[#111] hover:text-white transition disabled:hover:bg-[#eb5a55] disabled:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-[#fff] text-black  mt-[-10px] rounded-sm cursor-pointer px-2 py-1.5 shadow-md hover:bg-[#111] hover:text-white transition disabled:hover:bg-[#eb5a55] disabled:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={!input && !selectedFile}
               onClick={sendPost}
             >
               Post
             </button>
+            </div>
           </div>
         )}
       </div>

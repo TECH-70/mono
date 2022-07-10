@@ -25,7 +25,7 @@ function Modal() {
   const [post, setPost] = useState();
   const [comment, setComment] = useState("");
   const router = useRouter();
-
+//Modal.js is the popup for replying.
   useEffect(
     () =>
       onSnapshot(doc(db, "posts", postId), (snapshot) => {

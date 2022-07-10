@@ -17,7 +17,7 @@ function Widgets() {
       <hr className="border-[#1a1a1a]"></hr>
       <hr className="border-[#1a1a1a]"></hr>
       <hr className="border-[#1a1a1a]"></hr>
-      <div className="text-[#d9d9d9] space-y-3 bg-[#1e1e1e] pt-2 rounded-xl w-11/12 xl:w-9/12">
+      <div className="text-[#d9d9d9] space-y-3 bg-[#212121] pt-2 rounded-xl w-11/12 xl:w-9/12">
         <h4 className="font-bold text-xl px-4">People to look out for 👀:</h4>
         <button className="hover:bg-white hover:bg-opacity-[0.03] px-4 py-3 cursor-pointer transition duration-200 ease-out flex items-center justify-between w-full text-[#fff] font-light">
           <div className="flex"><img

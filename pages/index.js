@@ -21,7 +21,7 @@ export default function Home({ trendingResults, followResults, providers }) {
     <div className="">
       <Head>
         <title>Monotone</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" className="rounded-full"  href="https://i.ibb.co/gwtYFmm/Monotone-LOGO.png" />
       </Head>
 
       <main className="bg-[#1a1a1a] min-h-screen flex max-w-[1500px] mx-auto">
