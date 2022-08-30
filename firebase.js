@@ -8,13 +8,13 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDh0gHYP8uKw5mWwIhuhBamaMpSIbVYkLA",
-  authDomain: "monotone-web.firebaseapp.com",
-  projectId: "monotone-web",
-  storageBucket: "monotone-web.appspot.com",
-  messagingSenderId: "404663079261",
-  appId: "1:404663079261:web:1b6b234d1d28b441f658b4"
-};
+  apiKey: "AIzaSyCKHY2cAzRlKDP7OiMK52okSQ9rJfGpjb4",
+  authDomain: "monotone-1eefb.firebaseapp.com",
+  projectId: "monotone-1eefb",
+  storageBucket: "monotone-1eefb.appspot.com",
+  messagingSenderId: "418528951771",
+  appId: "1:418528951771:web:acfcc5a4d3f0bc7e37fbfe"
+};    
 
 // Initialize Firebase
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();

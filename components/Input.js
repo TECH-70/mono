@@ -1,4 +1,5 @@
 import {
+  PaperAirplaneIcon,
   PhotographIcon,
   XIcon,
 } from "@heroicons/react/outline";
@@ -85,7 +86,7 @@ function Input() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="How's life sailing? 🌊 "
             rows="2"
-            className="bg-[#252525] border-b-4 outline-none text-[#d9d9d9] rounded-sm pb-0 pl-4 text-lg h-10 placeholder-gray-500 tracking-wide w-[550px] ml-[-5px] mr-0 overflow-hidden"
+            className="bg-[#252525] border-b-4 outline-none text-[#d9d9d9] rounded-sm pb-0 pl-4 text-lg h-10 placeholder-gray-500 tracking-wide w-[563px] ml-[-5px] mr-0 overflow-hidden"
           />
 
           {selectedFile && (
@@ -105,6 +106,7 @@ function Input() {
           )}
         </div>
         {!loading && (
+          <div className="h-10 w-50 bg-[#252525] border-b-4 outline-none">
           <div className="flex items-center pt-2.5 ml-auto">
             <div className="flex items-center">
           <div className="mt-[-10px] mr-1 ml-1">
@@ -112,7 +114,7 @@ function Input() {
                 className="icon"
                 onClick={() => filePickerRef.current.click()}
               >
-                <PhotographIcon className="text-[#ffffff] position-fixed first-letter: h-[22px]" />
+                <PhotographIcon className="text-[#ffffff] position-fixed first-letter: h-[22px] hover:text-black hover:ease-out duration-300" />
                 <input
                   type="file"
                   ref={filePickerRef}
@@ -121,13 +123,14 @@ function Input() {
                 />
               </div>
             </div>
+            
             <button
-              className="bg-[#fff] text-black  mt-[-10px] rounded-sm cursor-pointer px-2 py-1.5 shadow-md hover:bg-[#111] hover:text-white transition disabled:hover:bg-[#eb5a55] disabled:hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
+              className="cursor-pointer mr-2 transition disabled:cursor-not-allowed"
               disabled={!input && !selectedFile}
               onClick={sendPost}
-            >
-              Post
+            ><PaperAirplaneIcon className="h-6 w-6 mt-[-10px] text-[#fff] hover:text-black hover:ease-out duration-300"></PaperAirplaneIcon>
             </button>
+            </div>
             </div>
           </div>
         )}

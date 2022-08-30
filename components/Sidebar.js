@@ -36,9 +36,9 @@ function Sidebar() {
         <img
           src={session.user.image}
           alt=""
-          className="h-10 w-10 rounded-full xl:mr-2.5"
+          className="h-10 w-10 mb-2 rounded-full xl:mr-2.5"
         />
-        <h4 className="hidden xl:inline leading-6">{session.user.name}</h4>
+        <h4 className="hidden mb-2 xl:inline leading-6">{session.user.name}</h4>
       </div>
       <div className="text-center xl:bg-[#323232] p-3 ml-3 mr-3 mb-1 rounded-sm">
         <div id="display" className="hidden xl:inline leading-6 text-[#d9d9d9] text-xl mb-2 font-semibold">
