@@ -12,7 +12,7 @@ function Widgets() {
         />
         <div className="ml-1 mt-10 h-10 xl:inline leading-3">
           <h4 className="font-bold mt-2.5">{session.user.name} ☁️</h4>
-        <div></div>
+        </div>
       </div>
       <hr className="border-[#1a1a1a]"></hr>
       <hr className="border-[#1a1a1a]"></hr>
