@@ -128,7 +128,7 @@ function Input() {
               className="cursor-pointer mr-2 transition disabled:cursor-not-allowed"
               disabled={!input && !selectedFile}
               onClick={sendPost}
-            ><PaperAirplaneIcon className="h-6 w-6 mt-[-10px] text-[#fff] hover:text-black hover:ease-out duration-300"></PaperAirplaneIcon>
+            ><PaperAirplaneIcon className="h-6 w-6 mt-[-10px] mr-1 text-[#fff] hover:text-black hover:ease-out duration-300"></PaperAirplaneIcon>
             </button>
             </div>
             </div>

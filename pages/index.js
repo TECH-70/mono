@@ -38,10 +38,10 @@ export default function Home({ trendingResults, followResults, providers }) {
 }
 
 export async function getServerSideProps(context) {
-  const trendingResults = await fetch("https://jsonkeeper.com/b/NKEV").then(
+  const trendingResults = await fetch("https://api.jsonbin.io/v3/b/6325ff2b5c146d63ca9f0b52").then(
     (res) => res.json()
   );
-  const followResults = await fetch("https://jsonkeeper.com/b/WWMJ").then(
+  const followResults = await fetch("https://api.jsonbin.io/v3/b/6325ff2b5c146d63ca9f0b52").then(
     (res) => res.json()
   );
   const providers = await getProviders();
