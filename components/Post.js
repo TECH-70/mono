@@ -89,7 +89,7 @@ function Post({ id, post, postPage }) {
 
   return (
     <div
-      className="p-3 max-w-[1000px] flex cursor-pointer break-all border-b-4 marker:mt-2 border-[#252525]"
+      className="p-3 max-w-[1000px] flex cursor-pointer border-b-4 marker:mt-2 border-[#252525]"
       onClick={() => router.push(`/${id}`)}
     >
       {!postPage && (
@@ -128,7 +128,7 @@ function Post({ id, post, postPage }) {
               <Moment fromNow>{post?.timestamp?.toDate()}</Moment>
             </span>
             {!postPage && (
-              <p className="text-[#d9d9d9] text-[15px] sm:text-base mt-0.5">
+              <p className="text-[#d9d9d9] text-[15px] mt-0.5">
                 {post?.text}
               </p>
             )}

@@ -95,7 +95,7 @@ function Input() {
                 className="absolute w-8 h-8 bg-[#15181c] hover:bg-[#272c26] bg-opacity-75 rounded-full flex items-center justify-center top-1 left-1 cursor-pointer"
                 onClick={() => setSelectedFile(null)}
               >
-                <XIcon className="text-[#fff] font-bold h-5" />
+                <XIcon className="text-[#fff] font-bold h-5" /> 
               </div>
               <img
                 src={selectedFile}
