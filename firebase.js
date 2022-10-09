@@ -14,7 +14,7 @@ const firebaseConfig = {
   storageBucket: "monotone-1eefb.appspot.com",
   messagingSenderId: "418528951771",
   appId: "1:418528951771:web:acfcc5a4d3f0bc7e37fbfe"
-};    
+};
 
 // Initialize Firebase
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
